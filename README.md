@@ -13,6 +13,21 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
+    header img {
+      max-height: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+{
+    h1 {
+      margin-top: 0;
+    }
+}
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 {
     body {
       background-color: #ffffff;
