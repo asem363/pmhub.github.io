@@ -13,88 +13,83 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
-    header img {
-      max-height: 80px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-{
-    h1 {
-      margin-top: 0;
-    }
-}
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-{
     body {
       background-color: #ffffff;
       color: #1f3c88;
       line-height: 1.6;
     }
-}
     header {
       background-color: #1f3c88;
       color: #ffffff;
       padding: 20px 40px;
       text-align: center;
     }
-{
     header img {
       max-height: 80px;
-      margin-bottom: 10px;
+      margin: 0 auto 10px;
+      display: block;
     }
-}
     nav a {
       color: #ffffff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-{
     .hero {
       padding: 60px 20px;
       text-align: center;
       background-color: #e6ecff;
     }
-}
     .hero h1 {
       font-size: 2.5em;
       margin-bottom: 20px;
     }
-{
     .hero p {
       font-size: 1.2em;
       max-width: 600px;
       margin: 0 auto;
     }
-}
-    .section {
+    section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-{
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
-}
     .feature {
       background-color: #f0f4ff;
       border-left: 4px solid #1f3c88;
       padding: 20px;
       border-radius: 8px;
     }
-{
-    .feature h3 {
-      margin-top: 0;
+    .screenshots {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 20px 0;
     }
-}
+    .screenshots img {
+      max-height: 400px;
+      margin-right: 15px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .pricing {
+      background-color: #f8f9ff;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 4px solid #1f3c88;
+      border-bottom: 4px solid #1f3c88;
+    }
+    .pricing h2 {
+      margin-bottom: 20px;
+    }
+    .pricing p {
+      font-size: 1.2em;
+    }
     footer {
       background-color: #1f3c88;
       color: #ffffff;
@@ -111,6 +106,8 @@
     <nav>
       <a href="#about">About</a>
       <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -147,6 +144,23 @@
     </div>
   </section>
 
+  <section class="section" id="screenshots">
+    <h2>App Screenshots</h2>
+    <div class="screenshots">
+      <img src="Снимок экрана 2025-04-29 220711.png" alt="Screenshot 1">
+      <img src="Снимок экрана 2025-04-29 220812.png" alt="Screenshot 2">
+      <img src="Снимок экрана 2025-04-29 220902.png" alt="Screenshot 3">
+      <img src="Снимок экрана 2025-04-29 220926.png" alt="Screenshot 4">
+      <img src="Снимок экрана 2025-04-29 221005.png" alt="Screenshot 5">
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Pricing</h2>
+    <p>Monthly Plan: <strong>5,000 KZT</strong></p>
+    <p>Yearly Plan: <strong>45,000 KZT</strong></p>
+  </section>
+
   <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p>Have questions or want to partner with us?</p>
@@ -160,3 +174,4 @@
 
 </body>
 </html>
+
