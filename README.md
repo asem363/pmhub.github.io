@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -12,73 +11,73 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
-
+{
     body {
       background-color: #ffffff;
       color: #1f3c88;
       line-height: 1.6;
     }
-
+}
     header {
       background-color: #1f3c88;
       color: #ffffff;
       padding: 20px 40px;
       text-align: center;
     }
-
+{
     header img {
       max-height: 80px;
       margin-bottom: 10px;
     }
-
+}
     nav a {
       color: #ffffff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-
+{
     .hero {
       padding: 60px 20px;
       text-align: center;
       background-color: #e6ecff;
     }
-
+}
     .hero h1 {
       font-size: 2.5em;
       margin-bottom: 20px;
     }
-
+{
     .hero p {
       font-size: 1.2em;
       max-width: 600px;
       margin: 0 auto;
     }
-
+}
     .section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-
+{
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
-
+}
     .feature {
       background-color: #f0f4ff;
       border-left: 4px solid #1f3c88;
       padding: 20px;
       border-radius: 8px;
     }
-
+{
     .feature h3 {
       margin-top: 0;
     }
-
+}
     footer {
       background-color: #1f3c88;
       color: #ffffff;
