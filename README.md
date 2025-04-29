@@ -1,5 +1,5 @@
 #asem363.github.io
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -84,13 +84,26 @@
   </section>
 
   <section class="section" id="features">
-    <h2>Key Features</h2>
-    <ul>
-      <li>🎓 Micro-lessons & certifications for PM skills</li>
-      <li>📱 Mobile app + Telegram bot + web platform</li>
-      <li>🧑‍🏫 Mentorship and community support</li>
-    </ul>
-  </section>
+  <h2>Features</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>📱 Mobile Learning</h3>
+      <p>Study on-the-go with our mobile app, complete tasks, and earn certification-ready skills.</p>
+    </div>
+    <div class="feature">
+      <h3>🤖 Telegram Chatbot</h3>
+      <p>Use our bot for daily PM tips, updates, resources, and micro-lessons right inside Telegram.</p>
+    </div>
+    <div class="feature">
+      <h3>🌐 Community</h3>
+      <p>Join like-minded learners and mentors to grow your network and exchange knowledge.</p>
+    </div>
+    <div class="feature">
+      <h3>📂 Templates & Tools</h3>
+      <p>Access practical project templates, checklists, and toolkits designed for SMEs in Kazakhstan.</p>
+    </div>
+  </div>
+</section>
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
