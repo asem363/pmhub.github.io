@@ -1,4 +1,3 @@
-#asem363.github.io
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +12,9 @@
       box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       background-color: #ffffff;
       color: #1f3c88;
@@ -23,11 +25,21 @@
       color: #ffffff;
       padding: 20px 40px;
       text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     }
     header img {
-      max-height: 80px;
-      margin: 0 auto 10px;
+      max-height: 50px;
+      margin-bottom: 10px;
       display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav {
+      margin-top: 10px;
     }
     nav a {
       color: #ffffff;
@@ -36,21 +48,12 @@
       font-weight: bold;
     }
     .hero {
-      padding: 60px 20px;
+      padding: 120px 20px 60px; /* Учитываем высоту фиксированной шапки */
       text-align: center;
       background-color: #e6ecff;
     }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto;
-    }
     section {
-      padding: 40px 20px;
+      padding: 80px 20px 40px; /* Отступ сверху из-за фиксированного хедера */
       max-width: 900px;
       margin: auto;
     }
@@ -84,17 +87,19 @@
       border-top: 4px solid #1f3c88;
       border-bottom: 4px solid #1f3c88;
     }
-    .pricing h2 {
-      margin-bottom: 20px;
-    }
-    .pricing p {
-      font-size: 1.2em;
-    }
     footer {
       background-color: #1f3c88;
       color: #ffffff;
       text-align: center;
       padding: 20px;
+    }
+    .pricing h2,
+    .section h2 {
+      margin-bottom: 20px;
+    }
+    .pricing p,
+    .section p {
+      font-size: 1.2em;
     }
   </style>
 </head>
@@ -174,4 +179,5 @@
 
 </body>
 </html>
+
 
