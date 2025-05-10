@@ -3,180 +3,212 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PMHub KZ - Learn Project Management</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>PMHub KZ</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      background-color: #ffffff;
-      color: #1f3c88;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1f3c88;
-      color: #ffffff;
-      padding: 20px 40px;
-      text-align: center;
-      position: fixed;
-      top: 0;
+    /* === Preloader === */
+    #preloader {
+      background: #ffffff;
+      bottom: 0;
+      height: 100vh;
       left: 0;
-      width: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100vw;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+{
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #007bff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+}
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+{
+    /* === Telegram Icon === */
+    .telegram-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 10px;
       z-index: 1000;
     }
-    header img {
-      max-height: 50px;
-      margin-bottom: 10px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+}
+    .telegram-icon img {
+      height: 40px;
+      width: 40px;
     }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: #ffffff;
-      margin: 0 15px;
+{
+    .telegram-button {
+      display: inline-block;
+      background-color: #0088cc;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-    }
-    .hero {
-      padding: 120px 20px 60px; /* Учитываем высоту фиксированной шапки */
-      text-align: center;
-      background-color: #e6ecff;
-    }
-    section {
-      padding: 80px 20px 40px; /* Отступ сверху из-за фиксированного хедера */
-      max-width: 900px;
-      margin: auto;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
       margin-top: 20px;
     }
+}
+    .telegram-button:hover {
+      background-color: #0077b6;
+    }
+{
+    /* === Download Section === */
+    .download-buttons {
+      text-align: center;
+      margin-top: 40px;
+    }
+}
+    .download-buttons img {
+      height: 60px;
+      margin: 0 10px;
+      opacity: 0.6;
+    }
+{
+    .download-buttons p {
+      color: gray;
+      font-size: 0.9em;
+    }
+}
+    /* === Features Hover Effect === */
     .feature {
-      background-color: #f0f4ff;
-      border-left: 4px solid #1f3c88;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
       padding: 20px;
-      border-radius: 8px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background: #f9f9f9;
+      margin: 10px;
     }
-    .screenshots {
-      overflow-x: auto;
-      white-space: nowrap;
-      padding: 20px 0;
+{
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      background-color: #dde5ff;
     }
-    .screenshots img {
-      max-height: 400px;
-      margin-right: 15px;
-      border-radius: 8px;
-      display: inline-block;
-    }
-    .pricing {
-      background-color: #f8f9ff;
-      padding: 40px 20px;
+}
+    /* === Contact Form === */
+    #feedback {
+      padding: 40px;
       text-align: center;
-      border-top: 4px solid #1f3c88;
-      border-bottom: 4px solid #1f3c88;
     }
-    footer {
-      background-color: #1f3c88;
-      color: #ffffff;
+{
+    #feedback form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+{
+    #feedback input,
+    #feedback textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+}
+    #feedback button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+{
+    #feedback button:hover {
+      background-color: #0056b3;
+    }
+}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+{
+    .section {
+      padding: 60px 20px;
+    }
+}
+    h2 {
       text-align: center;
-      padding: 20px;
-    }
-    .pricing h2,
-    .section h2 {
-      margin-bottom: 20px;
-    }
-    .pricing p,
-    .section p {
-      font-size: 1.2em;
     }
   </style>
 </head>
+
 <body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
 
-  <header>
-    <img src="5192769092300435085.jpg" alt="PMHub KZ Logo">
-    <h1>PMHub KZ</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#screenshots">Screenshots</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Telegram Chat Icon -->
+  <a href="https://t.me/PMHubKZ_bot" class="telegram-icon" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Chat">
+  </a>
 
-  <section class="hero">
-    <h1>Learn Project Management Anytime, Anywhere</h1>
-    <p>PMHub KZ is a mobile-first platform that helps students and SMEs in Kazakhstan master project management through localized content and real cases.</p>
-  </section>
-
-  <section class="section" id="about">
-    <h2>About the Project</h2>
-    <p>Our goal is to make project management accessible and practical for everyone, especially in the SME sector of Kazakhstan. PMHub KZ combines mobile learning, real-world scenarios, and community support to help users gain real project management experience.</p>
-  </section>
-
+  <!-- Features Section -->
   <section class="section" id="features">
     <h2>Features</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>📱 Mobile Learning</h3>
-        <p>Study on-the-go with our mobile app, complete tasks, and earn certification-ready skills.</p>
-      </div>
-      <div class="feature">
-        <h3>🤖 Telegram Chatbot</h3>
-        <p>Use our bot for daily PM tips, updates, resources, and micro-lessons right inside Telegram.</p>
-      </div>
-      <div class="feature">
-        <h3>🌐 Community</h3>
-        <p>Join like-minded learners and mentors to grow your network and exchange knowledge.</p>
-      </div>
-      <div class="feature">
-        <h3>📂 Templates & Tools</h3>
-        <p>Access practical project templates, checklists, and toolkits designed for SMEs in Kazakhstan.</p>
-      </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <div class="feature">🎯 Task Planning</div>
+      <div class="feature">📊 Analytics Dashboard</div>
+      <div class="feature">🎓 Microlearning Modules</div>
+      <div class="feature">👥 Team Collaboration</div>
     </div>
   </section>
 
-  <section class="section" id="screenshots">
-    <h2>App Screenshots</h2>
-    <div class="screenshots">
-      <img src="Снимок экрана 2025-04-29 220711.png" alt="Screenshot 1">
-      <img src="Снимок экрана 2025-04-29 220812.png" alt="Screenshot 2">
-      <img src="Снимок экрана 2025-04-29 220902.png" alt="Screenshot 3">
-      <img src="Снимок экрана 2025-04-29 220926.png" alt="Screenshot 4">
-      <img src="Снимок экрана 2025-04-29 221005.png" alt="Screenshot 5">
-    </div>
-  </section>
-
-  <section class="pricing" id="pricing">
-    <h2>Pricing</h2>
-    <p>Monthly Plan: <strong>5,000 KZT</strong></p>
-    <p>Yearly Plan: <strong>45,000 KZT</strong></p>
-  </section>
-
+  <!-- Telegram Contact Section -->
   <section class="section" id="contact">
     <h2>Contact Us</h2>
-    <p>Have questions or want to partner with us?</p>
-    <p>Email: <a href="mailto:pmhubkz@gmail.com">pmhubkz@gmail.com</a></p>
-    <p>Telegram: <a href="https://t.me/PMHubKZ_bot">@PMHubKZ_bot</a></p>
+    <p>Have questions? Reach out anytime:</p>
+    <a href="https://t.me/PMHubKZ_bot" class="telegram-button" target="_blank">Message us on Telegram</a>
   </section>
 
-  <footer>
-    <p>&copy; 2025 PMHub KZ. All rights reserved.</p>
-  </footer>
+  <!-- Feedback Form -->
+  <section class="section" id="feedback">
+    <h2>Send Us a Message</h2>
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
+  <!-- Download Section -->
+  <section class="section" id="download">
+    <h2>Download the App</h2>
+    <p style="text-align:center;">Coming soon to your favorite app store</p>
+    <div class="download-buttons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_%28black%29_SVG.svg" alt="App Store">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      <p>App launching soon on iOS and Android</p>
+    </div>
+  </section>
+
+  <!-- Preloader Script -->
+  <script>
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.display = "none";
+    });
+  </script>
 </body>
 </html>
 
