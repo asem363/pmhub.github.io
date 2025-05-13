@@ -162,6 +162,19 @@
         </div>
     </div>
 </section>
+<section class="section" id="blog">
+  <h2>Latest News & Articles</h2>
+  <div class="blog-posts">
+    <article>
+      <h3><a href="#">How PMHub KZ is Helping SMEs in Kazakhstan</a></h3>
+      <p>Our platform is designed to meet the unique needs of SMEs in Kazakhstan, offering localized tools and learning resources...</p>
+    </article>
+    <article>
+      <h3><a href="#">5 Project Management Tips for Small Businesses</a></h3>
+      <p>Effective project management can make a huge difference for small businesses. Here are some essential tips...</p>
+    </article>
+  </div>
+</section>
 
   <section class="section" id="screenshots">
     <h2>App Screenshots</h2>
