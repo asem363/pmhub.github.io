@@ -114,6 +114,7 @@
       <a href="#screenshots">Screenshots</a>
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
+      <a href="#contact">FAQ</a>
     </nav>
   </header>
 
@@ -130,49 +131,38 @@
   <section class="section" id="features">
     <h2>Features</h2>
     <div class="features">
-      <div class="feature">
-        <h3>📱 Mobile Learning</h3>
-        <p>Study on-the-go with our mobile app, complete tasks, and earn certification-ready skills.</p>
-      </div>
-      <div class="feature">
-        <h3>🤖 Telegram Chatbot</h3>
-        <p>Use our bot for daily PM tips, updates, resources, and micro-lessons right inside Telegram.</p>
-      </div>
-      <div class="feature">
-        <h3>🌐 Community</h3>
-        <p>Join like-minded learners and mentors to grow your network and exchange knowledge.</p>
-      </div>
-      <div class="feature">
-        <h3>📂 Templates & Tools</h3>
-        <p>Access practical project templates, checklists, and toolkits designed for SMEs in Kazakhstan.</p>
-      </div>
-  <div class="feature">
-  <h3>🌍 Project Management News & Events</h3>
-  <p>Stay up-to-date with the latest news, global events, and conferences in project management, both worldwide and within Kazakhstan.</p>
-  <div class="news-events">
-    <!-- Здесь можно использовать динамические данные или виджет -->
-    <ul>
-      <li><a href="#">PM Global Summit 2025: Join industry leaders worldwide</a></li>
-      <li><a href="#">Project Management Week Kazakhstan: Upcoming workshops in Almaty</a></li>
-      <li><a href="#">New PM Trends: What to Expect in 2025</a></li>
-      <li><a href="#">International PM Conference: Call for speakers</a></li>
-    </ul>
-  </div>
-</div>
-  </section>
-<section class="section" id="blog">
-  <h2>Latest News & Articles</h2>
-  <div class="blog-posts">
-    <article>
-      <h3><a href="#">How PMHub KZ is Helping SMEs in Kazakhstan</a></h3>
-      <p>Our platform is designed to meet the unique needs of SMEs in Kazakhstan, offering localized tools and learning resources...</p>
-    </article>
-    <article>
-      <h3><a href="#">5 Project Management Tips for Small Businesses</a></h3>
-      <p>Effective project management can make a huge difference for small businesses. Here are some essential tips...</p>
-    </article>
-  </div>
+        <div class="feature">
+            <h3>📱 Mobile Learning</h3>
+            <p>Study on-the-go with our mobile app, complete tasks, and earn certification-ready skills.</p>
+        </div>
+        <div class="feature">
+            <h3>🤖 Telegram Chatbot</h3>
+            <p>Use our bot for daily PM tips, updates, resources, and micro-lessons right inside Telegram.</p>
+        </div>
+        <div class="feature">
+            <h3>🌐 Community</h3>
+            <p>Join like-minded learners and mentors to grow your network and exchange knowledge.</p>
+        </div>
+        <div class="feature">
+            <h3>📂 Templates & Tools</h3>
+            <p>Access practical project templates, checklists, and toolkits designed for SMEs in Kazakhstan.</p>
+        </div>
+        <div class="feature">
+            <h3>🌍 Project Management News & Events</h3>
+            <p>Stay up-to-date with the latest news, global events, and conferences in project management, both worldwide and within Kazakhstan.</p>
+            <div class="news-events">
+                <!-- Dynamic data or widget can be used here -->
+                <ul>
+                    <li><a href="#">PM Global Summit 2025: Join industry leaders worldwide</a></li>
+                    <li><a href="#">Project Management Week Kazakhstan: Upcoming workshops in Almaty</a></li>
+                    <li><a href="#">New PM Trends: What to Expect in 2025</a></li>
+                    <li><a href="#">International PM Conference: Call for speakers</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
+
   <section class="section" id="screenshots">
     <h2>App Screenshots</h2>
     <div class="screenshots">
