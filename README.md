@@ -48,27 +48,38 @@
       font-weight: bold;
     }
     .hero {
-      padding: 120px 20px 60px; /* Учитываем высоту фиксированной шапки */
+      padding: 120px 20px 60px;
       text-align: center;
       background-color: #e6ecff;
     }
     section {
-      padding: 80px 20px 40px; /* Отступ сверху из-за фиксированного хедера */
+      padding: 80px 20px 40px;
       max-width: 900px;
       margin: auto;
     }
+    /* ✅ ОДИНАКОВЫЙ, ОБЪЕДИНЁННЫЙ СТИЛЬ ДЛЯ FEATURES */
     .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 20px;
-      margin-top: 20px;
     }
     .feature {
+      flex: 1 1 250px;
       background-color: #f0f4ff;
       border-left: 4px solid #1f3c88;
       padding: 20px;
       border-radius: 8px;
+      box-sizing: border-box;
     }
+    .medium-feature {
+      flex: 1.5 1 400px;
+      background-color: #f1f8e9;
+    }
+    .wide-feature {
+      flex: 2 1 500px;
+      background-color: #e0f7fa;
+    }
+{
     .screenshots {
       overflow-x: auto;
       white-space: nowrap;
@@ -93,12 +104,10 @@
       text-align: center;
       padding: 20px;
     }
-    .pricing h2,
-    .section h2 {
+    h2 {
       margin-bottom: 20px;
     }
-    .pricing p,
-    .section p {
+    p {
       font-size: 1.2em;
     }
   </style>
@@ -128,75 +137,47 @@
     <p>Our goal is to make project management accessible and practical for everyone, especially in the SME sector of Kazakhstan. PMHub KZ combines mobile learning, real-world scenarios, and community support to help users gain real project management experience.</p>
   </section>
 
- <style>
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.feature {
-    flex: 1 1 250px;
-    box-sizing: border-box;
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.wide-feature {
-    flex: 2 1 500px;
-    background: #e0f7fa;
-}
-
-.medium-feature {
-    flex: 1.5 1 400px;
-    background: #f1f8e9;
-}
-</style>
-
-<section class="section" id="features">
+  <section class="section" id="features">
     <h2>Features</h2>
     <div class="features">
-        <div class="feature">
-            <h3>📱 Mobile Learning</h3>
-            <p>Study on-the-go with our mobile app, complete tasks, and earn certification-ready skills.</p>
-        </div>
-        <div class="feature">
-            <h3>🤖 Telegram Chatbot</h3>
-            <p>Use our bot for daily PM tips, updates, resources, and micro-lessons right inside Telegram.</p>
-        </div>
-        <div class="feature">
-            <h3>🌐 Community</h3>
-            <p>Join like-minded learners and mentors to grow your network and exchange knowledge.</p>
-        </div>
-        <div class="feature">
-            <h3>📂 Templates & Tools</h3>
-            <p>Access practical project templates, checklists, and toolkits designed for SMEs in Kazakhstan.</p>
-        </div>
-        <div class="feature medium-feature">
-            <h3>📚 Articles & Books about Project Management</h3>
-            <p>Explore curated articles, e-books, and reading lists to deepen your project management knowledge.</p>
-            <ul>
-                <li><a href="#">Top 10 Books for Aspiring PMs</a></li>
-                <li><a href="#">Agile vs Waterfall: In-depth Analysis</a></li>
-                <li><a href="#">Case Studies in Kazakhstani SMEs</a></li>
-                <li><a href="#">Free PM E-books Collection 2025</a></li>
-            </ul>
-        </div>
-        <div class="feature wide-feature">
-            <h3>🌍 Project Management News & Events</h3>
-            <p>Stay up-to-date with the latest news, global events, and conferences in project management, both worldwide and within Kazakhstan.</p>
-            <div class="news-events">
-                <ul>
-                    <li><a href="#">PM Global Summit 2025: Join industry leaders worldwide</a></li>
-                    <li><a href="#">Project Management Week Kazakhstan: Upcoming workshops in Almaty</a></li>
-                    <li><a href="#">New PM Trends: What to Expect in 2025</a></li>
-                    <li><a href="#">International PM Conference: Call for speakers</a></li>
-                </ul>
-            </div>
-        </div>
+      <div class="feature">
+        <h3>📱 Mobile Learning</h3>
+        <p>Study on-the-go with our mobile app, complete tasks, and earn certification-ready skills.</p>
+      </div>
+      <div class="feature">
+        <h3>🤖 Telegram Chatbot</h3>
+        <p>Use our bot for daily PM tips, updates, resources, and micro-lessons right inside Telegram.</p>
+      </div>
+      <div class="feature">
+        <h3>🌐 Community</h3>
+        <p>Join like-minded learners and mentors to grow your network and exchange knowledge.</p>
+      </div>
+      <div class="feature">
+        <h3>📂 Templates & Tools</h3>
+        <p>Access practical project templates, checklists, and toolkits designed for SMEs in Kazakhstan.</p>
+      </div>
+      <div class="feature medium-feature">
+        <h3>📚 Articles & Books about Project Management</h3>
+        <p>Explore curated articles, e-books, and reading lists to deepen your project management knowledge.</p>
+        <ul>
+          <li><a href="#">Top 10 Books for Aspiring PMs</a></li>
+          <li><a href="#">Agile vs Waterfall: In-depth Analysis</a></li>
+          <li><a href="#">Case Studies in Kazakhstani SMEs</a></li>
+          <li><a href="#">Free PM E-books Collection 2025</a></li>
+        </ul>
+      </div>
+      <div class="feature wide-feature">
+        <h3>🌍 Project Management News & Events</h3>
+        <p>Stay up-to-date with the latest news, global events, and conferences in project management, both worldwide and within Kazakhstan.</p>
+        <ul>
+          <li><a href="#">PM Global Summit 2025</a></li>
+          <li><a href="#">Project Management Week Kazakhstan</a></li>
+          <li><a href="#">New PM Trends 2025</a></li>
+          <li><a href="#">International PM Conference</a></li>
+        </ul>
+      </div>
     </div>
-</section>
+  </section>
 
 <section class="section" id="blog">
   <h2>Latest News & Articles</h2>
