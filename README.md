@@ -73,11 +73,11 @@
     }
     .medium-feature {
       flex: 1.5 1 400px;
-      background-color: #f1f8e9;
+      background-color: #f0f4ff;
     }
     .wide-feature {
       flex: 2 1 500px;
-      background-color: #e0f7fa;
+      background-color: #f0f4ff;
     }
 {
     }
