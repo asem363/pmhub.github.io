@@ -147,7 +147,7 @@
             <h3>📂 Templates & Tools</h3>
             <p>Access practical project templates, checklists, and toolkits designed for SMEs in Kazakhstan.</p>
         </div>
-        <div class="feature">
+        <div class="feature wide-feature">
             <h3>🌍 Project Management News & Events</h3>
             <p>Stay up-to-date with the latest news, global events, and conferences in project management, both worldwide and within Kazakhstan.</p>
             <div class="news-events">
