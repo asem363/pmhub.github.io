@@ -121,6 +121,7 @@
     <nav>
       <a href="#about">About</a>
       <a href="#features">Features</a>
+      <a href="#features">News & Articles</a>
       <a href="#screenshots">Screenshots</a>
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
