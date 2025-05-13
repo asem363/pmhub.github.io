@@ -146,8 +146,6 @@
         <h3>📂 Templates & Tools</h3>
         <p>Access practical project templates, checklists, and toolkits designed for SMEs in Kazakhstan.</p>
       </div>
-    </div>
-  </section>
   <div class="feature">
   <h3>🌍 Project Management News & Events</h3>
   <p>Stay up-to-date with the latest news, global events, and conferences in project management, both worldwide and within Kazakhstan.</p>
@@ -161,25 +159,6 @@
     </ul>
   </div>
 </div>
-
-<section class="section" id="faq">
-  <h2>FAQ</h2>
-  <ul>
-    <li><strong>What is PMHub KZ?</strong><p>PMHub KZ is a mobile learning platform for mastering project management in SMEs.</p></li>
-    <li><strong>How do I get started?</strong><p>Simply download the app and start learning with our free content or sign up for the premium plan.</p></li>
-    <li><strong>Is there a certification?</strong><p>Yes, we offer certification upon completion of key learning modules.</p></li>
-  </ul>
-</section>
-
-  <section class="section" id="screenshots">
-    <h2>App Screenshots</h2>
-    <div class="screenshots">
-      <img src="Снимок экрана 2025-04-29 220711.png" alt="Screenshot 1">
-      <img src="Снимок экрана 2025-04-29 220812.png" alt="Screenshot 2">
-      <img src="Снимок экрана 2025-04-29 220902.png" alt="Screenshot 3">
-      <img src="Снимок экрана 2025-04-29 220926.png" alt="Screenshot 4">
-      <img src="Снимок экрана 2025-04-29 221005.png" alt="Screenshot 5">
-    </div>
   </section>
 <section class="section" id="blog">
   <h2>Latest News & Articles</h2>
@@ -194,6 +173,17 @@
     </article>
   </div>
 </section>
+  <section class="section" id="screenshots">
+    <h2>App Screenshots</h2>
+    <div class="screenshots">
+      <img src="Снимок экрана 2025-04-29 220711.png" alt="Screenshot 1">
+      <img src="Снимок экрана 2025-04-29 220812.png" alt="Screenshot 2">
+      <img src="Снимок экрана 2025-04-29 220902.png" alt="Screenshot 3">
+      <img src="Снимок экрана 2025-04-29 220926.png" alt="Screenshot 4">
+      <img src="Снимок экрана 2025-04-29 221005.png" alt="Screenshot 5">
+    </div>
+  </section>
+
 
   <section class="pricing" id="pricing">
     <h2>Pricing</h2>
@@ -214,7 +204,15 @@
   </p>
 </section>
 
-  
+<section class="section" id="faq">
+  <h2>FAQ</h2>
+  <ul>
+    <li><strong>What is PMHub KZ?</strong><p>PMHub KZ is a mobile learning platform for mastering project management in SMEs.</p></li>
+    <li><strong>How do I get started?</strong><p>Simply download the app and start learning with our free content or sign up for the premium plan.</p></li>
+    <li><strong>Is there a certification?</strong><p>Yes, we offer certification upon completion of key learning modules.</p></li>
+  </ul>
+</section>
+
 <section class="section" id="download">
   <h2>Download the App</h2>
   <p>Get PMHub KZ on your device:</p>
