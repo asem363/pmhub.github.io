@@ -80,6 +80,7 @@
       background-color: #e0f7fa;
     }
 {
+    }
     .screenshots {
       overflow-x: auto;
       white-space: nowrap;
